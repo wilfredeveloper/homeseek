@@ -1,0 +1,91 @@
+{
+  "id": "a627450b-16a5-4015-980a-62b58d65199f",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.houses": {
+      "name": "houses",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "house_name": {
+          "name": "house_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "house_description": {
+          "name": "house_description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "house_location": {
+          "name": "house_location",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "house_rent": {
+          "name": "house_rent",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "caretaker_name": {
+          "name": "caretaker_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "caretaker_number": {
+          "name": "caretaker_number",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_water_in_rent": {
+          "name": "is_water_in_rent",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_electricity_in_rent": {
+          "name": "is_electricity_in_rent",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "vacant_houses": {
+          "name": "vacant_houses",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "image_url": {
+          "name": "image_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
