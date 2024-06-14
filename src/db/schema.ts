@@ -11,8 +11,8 @@ export const houses= pgTable('houses',{
   caretakerNumber:text('caretaker_number').notNull(),
   inclusiveWaterBill: boolean("is_water_in_rent").notNull(),
   inclusiveElectricityBill: boolean('is_electricity_in_rent').notNull(),
-  vacantHouse:integer('vacant_houses').notNull(),
-  imageUrl:text('image_url')
+  vacantHouses:integer('vacant_houses').notNull(),
+  imageURL:text('image_url')
 })
 
 
